@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.AankoopDetailsActivity">
+
+    <TextView
+        android:id="@+id/productNaamLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Product:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/productNaamData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProductNaam"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/productNaamLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/aankoopBedragLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bedrag:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/productNaamLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/aankoopBedragData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AankoopBedrag"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/aankoopBedragLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/garantieEinddatumLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Einddatum garantie:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/aankoopBedragLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/garantieEinddatumData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EindDatum"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/garantieEinddatumLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/resterendeDagenLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resterende dagen garantie:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/garantieEinddatumLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/resterendeDagenData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dagen"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/resterendeDagenLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/notificatiesLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notificaties"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/resterendeDagenLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1Day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 dag vóór einddatum"
+        app:layout_constraintTop_toBottomOf="@id/notificatiesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 week vóór einddatum"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1Month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 maand vóór einddatum"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1Week"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/viewPhotosButton"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="Tik hier om foto's te bekijken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

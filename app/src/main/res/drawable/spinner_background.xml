@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background with rounded corners and border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="4dp"/>
+            <stroke android:width="1dp" android:color="#CCCCCC"/>
+        </shape>
+    </item>
+
+    <!-- Triangle icon on the right -->
+    <item android:drawable="@drawable/triangle" android:gravity="end|center_vertical"/>
+</layer-list>

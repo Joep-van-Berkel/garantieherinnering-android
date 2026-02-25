@@ -1,0 +1,22 @@
+<!--purple theme-->
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/purple_200</item>
+    </style>
+
+    <!-- Custom style for EditText and Spinner with fixed height -->
+    <style name="CustomInputStyle">
+        <item name="android:background">@drawable/input_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <!-- Custom style for labels -->
+    <style name="CustomLabelStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
